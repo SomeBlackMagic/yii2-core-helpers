@@ -1,0 +1,25 @@
+{
+    "name": "someblackmagic/yii2-core-helpers",
+    "description": "Validators object ",
+    "keywords": ["yii2", "helpers", "helpers","someblackmagic"],
+    "type": "yii2-core-component",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andru Cherny",
+            "homepage": "https://github.com/wirwolf"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "yii\\helpers\\": "src/"
+        }
+    }
+}
