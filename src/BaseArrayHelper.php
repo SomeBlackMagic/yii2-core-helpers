@@ -318,6 +318,21 @@ class BaseArrayHelper
 
         return $default;
     }
+    
+    /**
+     * @param $array
+     * @param $keys
+     * @param null $default
+     *
+     * @return mixed|null
+     */
+    public static function removeKeys(&$array, $keys, $default = null)
+    {
+        foreach ($keys as $keyItem) {
+            $array = self::remove($array, $keyItem, $default);
+        }
+        return $array;
+    }
 
     /**
      * Removes items with matching values from the array and returns the removed items.
